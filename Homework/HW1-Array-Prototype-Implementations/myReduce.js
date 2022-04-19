@@ -1,5 +1,6 @@
 Array.prototype.myReduce = function (callback, initialValue) {
   let previousValue = initialValue === undefined ? this[0] : initialValue;
+  
   for (let i = 0; i < this.length; i++) {
     previousValue = callback(previousValue, this[i]);
   }
@@ -9,8 +10,8 @@ Array.prototype.myReduce = function (callback, initialValue) {
   return previousValue;
 };
 
-let array1 = [1, 2, 3, 4];
-let array2 = [15, 16, 17, 18, 19];
+const array1 = [1, 2, 3, 4];
+const array2 = [15, 16, 17, 18, 19];
 
 console.log(array1.myReduce((prev, curr) => prev + curr, 0)); //expected 10
 console.log(array2.myReduce((prev, curr) => prev + curr, 10)); //expected 95

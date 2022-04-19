@@ -8,4 +8,5 @@ Array.prototype.myFind = function (callback) {
 };
 
 const array1 = [5, 12, 8, 130, 44];
+
 console.log(array1.myFind((element) => element > 10)); //expected 12
