@@ -7,9 +7,9 @@ Array.prototype.myEvery = function (callback) {
   return true;
 };
 
-let array1 = [1, 30, 39, 29, 10, 13];
-let array2 = [12, 5, 8, 130, 44];
-let array3 = [12, 54, 18, 130, 44];
+const array1 = [1, 30, 39, 29, 10, 13];
+const array2 = [12, 5, 8, 130, 44];
+const array3 = [12, 54, 18, 130, 44];
 
 console.log(array1.myEvery((currentValue) => currentValue < 40)); //expected true
 console.log(array2.myEvery((x) => x >= 10)); //expected false
