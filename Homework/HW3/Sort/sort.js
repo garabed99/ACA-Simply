@@ -7,7 +7,7 @@ function sort(input) {
   let removedItem;
   let result = [];
 
-  while (inputLength > 0) {
+  while (inputLength) {
     removedItem = Math.min(...input);
     result.push(removedItem);
     input.push(input.splice(input.indexOf(removedItem), 1)[0]);
